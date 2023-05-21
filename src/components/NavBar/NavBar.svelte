@@ -2,11 +2,14 @@
   import FaBars from 'svelte-icons/fa/FaBars.svelte'
   import FaSearch from 'svelte-icons/fa/FaSearch.svelte'
   import FaTimes from 'svelte-icons/fa/FaTimes.svelte'
+  import { AsideMenu } from '../../store/states';
+	import AsideBar from '../AsideBar/AsideBar.svelte';
+	import AsideBarReduced from '../AsideBarReduced/AsideBarReduced.svelte';
 
-  export let showAsideMenu = false;
-
+ $: showAsideMenu = AsideMenu;
   function toggleAsideMenu(){
     showAsideMenu = !showAsideMenu;
+    
   }
 </script>
 
@@ -16,12 +19,13 @@
         width: 100vw;
         height: 30px;
         align-items: center;
-        padding:8px;
+        padding: 12px;
+        border-bottom: 1px solid #dadce0;
       }
   
       .icon{
         color: #5f6368;
-        margin: 0 4px;
+        margin: 0 24px;
         padding: 12px;
         width: 24px;
         height: 24px;
@@ -97,3 +101,11 @@
 
   </nav>
 
+  {#if showAsideMenu}
+    
+      <AsideBar/>
+   
+  {/if}
+  {#if !showAsideMenu}
+    <AsideBarReduced/>
+  {/if}
