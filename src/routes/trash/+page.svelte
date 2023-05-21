@@ -1,1 +1,5 @@
-<h1>Here is trash</h1>
+<script>
+  import App from "../../App.svelte";
+</script>
+
+<App/>

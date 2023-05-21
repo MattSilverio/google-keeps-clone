@@ -1,1 +1,5 @@
-<h1>Here is archive</h1>
+<script>
+  import App from "../../App.svelte";
+</script>
+
+<App/>

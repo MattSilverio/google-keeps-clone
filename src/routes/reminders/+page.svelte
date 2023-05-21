@@ -1,1 +1,5 @@
-<h1>Here is Reminders</h1>
+<script>
+  import App from "../../App.svelte";
+</script>
+
+<App/>
