@@ -102,7 +102,7 @@
     <div class="container">
       <form>
         <button class="search"><FaSearch /></button>
-        <input type="text" placeholder="Search" />
+        <input type="text" placeholder="Procurar (Não Implementado)" />
         <button class="cancel"><FaTimes /></button>
       </form>
     </div>
