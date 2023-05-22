@@ -3,8 +3,17 @@
   import FaRegBell from 'svelte-icons/fa/FaRegBell.svelte'
   import FaRegTrashAlt from 'svelte-icons/fa/FaRegTrashAlt.svelte'
   import FaArchive from 'svelte-icons/fa/FaArchive.svelte'
-
+  import FaPlus from 'svelte-icons/fa/FaPlus.svelte'
+	import { createNewNote } from '../../services/notes';
   
+  async function createNote(){
+    const data = {
+      title: 'Titulo',
+      content: 'Nova nota',
+    }
+    const response = await createNewNote(data)
+    
+  }
   </script>
   
   <style>
@@ -58,6 +67,11 @@
       <li>
         <div>
           <a href="/trash"><FaRegTrashAlt/></a>
+        </div>
+      </li>
+      <li>
+        <div on:click={createNote}>
+          <FaPlus/>
         </div>
       </li>
     </ul>

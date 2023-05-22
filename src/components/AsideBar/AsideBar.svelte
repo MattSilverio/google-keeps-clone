@@ -3,8 +3,17 @@ import FaRegLightbulb from 'svelte-icons/fa/FaRegLightbulb.svelte'
 import FaRegBell from 'svelte-icons/fa/FaRegBell.svelte'
 import FaRegTrashAlt from 'svelte-icons/fa/FaRegTrashAlt.svelte'
 import FaArchive from 'svelte-icons/fa/FaArchive.svelte'
+import FaPlus from 'svelte-icons/fa/FaPlus.svelte'
+import { createNewNote } from '../../services/notes';
 
-
+async function createNote(){
+    const data = {
+      title: 'Titulo',
+      content: 'Nova nota',
+    }
+    const response = await createNewNote(data)
+    
+  }
 
 
 </script>
@@ -19,10 +28,13 @@ import FaArchive from 'svelte-icons/fa/FaArchive.svelte'
   div{
     width: 48px;
     height: 24px;
+    
   }
 
   li{
-    
+    display: flex;
+    align-items: center;
+    justify-content: start;
     padding: 8px 16px;
     border-radius: 8px;
     cursor: pointer;
@@ -84,6 +96,12 @@ import FaArchive from 'svelte-icons/fa/FaArchive.svelte'
         </div>
         <span>Lixeira</span>
       </a>
+    </li>
+    <li on:click={createNote}>
+        <div>
+          <FaPlus/>
+        </div>
+        <span>Adicionar Nota</span>
     </li>
   </ul>
 </aside>
