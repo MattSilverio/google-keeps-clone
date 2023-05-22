@@ -22,8 +22,7 @@ import FaArchive from 'svelte-icons/fa/FaArchive.svelte'
   }
 
   li{
-    display: flex;
-    align-items: center;
+    
     padding: 8px 16px;
     border-radius: 8px;
     cursor: pointer;
@@ -34,13 +33,16 @@ import FaArchive from 'svelte-icons/fa/FaArchive.svelte'
   }
 
   a{
+    display: flex;
+    align-items: center;
+    justify-content: start;
     text-decoration: none;
     color: #5f6368;
   }
 
   .aside-bar{
     margin-top: 20px;
-    width: 200px;
+    width: 10rem;
     height: 200px;
     border-radius: 8px;
     background-color: #f1f3f4;
@@ -52,28 +54,36 @@ import FaArchive from 'svelte-icons/fa/FaArchive.svelte'
 <aside class="aside-bar">
   <ul>
     <li>
-      <div>
-        <FaRegLightbulb />
-      </div>
-      <a href="/">Notas</a>
+      <a href="/">
+        <div>
+          <FaRegLightbulb />
+        </div>
+        <span>Notas</span>
+      </a>
     </li>
     <li>
+      <a href="/reminders">
       <div>
         <FaRegBell/>
       </div>
-      <a href="/reminders">Lembretes</a>
+      <span>Lembretes</span>
+    </a>
     </li>
     <li>
+      <a href="/archive">
       <div>
         <FaArchive/>
       </div>
-      <a href="/archive">Arquivo</a>
+      <span>Arquivo</span>
+    </a>
     </li>
     <li>
-      <div>
-        <FaRegTrashAlt/>
-      </div>
-      <a href="/trash">Lixeira</a>
+      <a href="/trash">
+        <div>
+          <FaRegTrashAlt/>
+        </div>
+        <span>Lixeira</span>
+      </a>
     </li>
   </ul>
 </aside>
