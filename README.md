@@ -1,5 +1,5 @@
 # Google Keeps Clone
-A clone project of Google Keeps using Svelte and Nest.js
+
 
 Para rodar localmente, baixe este repositório e o do [backend](https://github.com/MattSilverio/google-keeps-clone-be)
 
