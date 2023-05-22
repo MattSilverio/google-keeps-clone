@@ -16,11 +16,19 @@
   <style>
       nav{
         display: flex;
+        position: absolute;
+        top: 0;
         width: 100vw;
         height: 30px;
         align-items: center;
         padding: 12px;
         border-bottom: 1px solid #dadce0;
+      }
+
+      .aside{
+        position: absolute;
+        left: 0;
+        top: 3rem;
       }
   
       .icon{
@@ -99,13 +107,16 @@
       </form>
     </div>
 
+    <div class="aside">
+      {#if showAsideMenu}
+        
+          <AsideBar/>
+       
+      {/if}
+      {#if !showAsideMenu}
+        <AsideBarReduced/>
+      {/if}
+
+    </div>
   </nav>
 
-  {#if showAsideMenu}
-    
-      <AsideBar/>
-   
-  {/if}
-  {#if !showAsideMenu}
-    <AsideBarReduced/>
-  {/if}
