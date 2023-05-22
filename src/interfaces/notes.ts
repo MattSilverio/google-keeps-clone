@@ -1,6 +1,6 @@
 import type { Tag } from './tag';
 
-enum NoteStatus {
+export enum NoteStatus {
 	ACTIVE = 'ACTIVE',
 	ARCHIVED = 'ARCHIVED',
 	DELETED = 'DELETED'
