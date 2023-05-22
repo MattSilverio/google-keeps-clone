@@ -20,8 +20,17 @@ Depois
 npm run start
 ```
 
-Dpois 
+Para visualizar o banco de dados, entre no diretorio do backend e rode o comando:
+```
+npx prisma studio
+```
+Geralmente a url, vai ficar no localhost:5555
 
+
+Caso receba um erro sobre Table.Note doesn't exist, rode o seguinte comando para subir o schema do db:
+```
+npx prisma db push
+```
 
 ## Funcionalidades
 - [X] Criar / Editar / Excluir uma Nota
