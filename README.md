@@ -3,10 +3,10 @@ A clone project of Google Keeps using Svelte and Nest.js
 
 
 ## Funcionalidades
-- [ ] Criar / Editar / Excluir uma Nota
-- [ ] Criar / Editar / Excluir Lembretes
+- [X] Criar / Editar / Excluir uma Nota
+- [X] Criar / Editar / Excluir Lembretes
 - [ ] Criar / Editar / Excluir Marcadores
-- [ ] Arquivar Notas e/ou Lembretes
+- [X] Arquivar Notas e/ou Lembretes
 - [ ] Pesquisar por Notas e/ou Lembretes
 
 ## Requisitos não funcionais
