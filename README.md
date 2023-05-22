@@ -32,7 +32,7 @@ Caso receba um erro sobre Table.Note doesn't exist, rode o seguinte comando para
 npx prisma db push
 ```
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IEetOxOJGT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+Demo Video: https://www.youtube.com/watch?v=IEetOxOJGT4
 
 ## Funcionalidades
 - [X] Criar / Editar / Excluir uma Nota
