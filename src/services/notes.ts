@@ -10,8 +10,8 @@ export async function getNoteById(id: string) {
 	return response.data;
 }
 
-export async function createNewNote() {
-	const response = await api.post('/notes');
+export async function createNewNote(data: any) {
+	const response = await api.post('/notes', data);
 	return response.data;
 }
 
