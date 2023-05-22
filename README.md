@@ -1,6 +1,27 @@
 # Google Keeps Clone
 A clone project of Google Keeps using Svelte and Nest.js
 
+Para rodar localmente, baixe este repositório e o do [backend](https://github.com/MattSilverio/google-keeps-clone-be)
+
+No terminal, baixe as dependências em ambos os diretórios(front e back) com:
+
+```
+npm install
+```
+
+No diretório do back, suba o banco de dados que está no Docker com:
+
+```
+docker compose up
+```
+
+Depois 
+```
+npm run start
+```
+
+Dpois 
+
 
 ## Funcionalidades
 - [X] Criar / Editar / Excluir uma Nota
