@@ -3,6 +3,8 @@
 
 Para rodar localmente, baixe este repositório e o do [backend](https://github.com/MattSilverio/google-keeps-clone-be)
 
+Pontos a melhorar: Utilizar sistema de issues para fazer rastreabilidade, padronizar linguagem dos commits e prefixos, refatorar a reatividade dos Cards filtrados por status.
+
 No terminal, baixe as dependências em ambos os diretórios(front e back) com:
 
 ```
